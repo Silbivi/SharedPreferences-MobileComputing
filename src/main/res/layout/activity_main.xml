@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="342dp"
+        android:layout_height="496dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="INPUT DATA"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="ID" />
+
+            <EditText
+                android:id="@+id/editid"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="50sp"
+                android:layout_marginLeft="50sp"
+                android:hint="enter your id" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="50sp"
+                android:layout_marginLeft="50sp"
+                android:hint="enter your name" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="RESULT"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="ID" />
+
+            <EditText
+                android:id="@+id/showid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="50sp"
+                android:layout_marginLeft="50sp"
+                android:enabled="false" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/showname"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="50sp"
+                android:layout_marginLeft="50sp"
+                android:enabled="false" />
+
+        </TableRow>
+    </TableLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:text="Save"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view"
+            android:text="View"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:text="Clear"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
